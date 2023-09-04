@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:12.5
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: Tag97
+    ports:
+      - "5433:5432"
+volumes:  
+ postres:
